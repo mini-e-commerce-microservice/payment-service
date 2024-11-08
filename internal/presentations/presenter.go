@@ -1,11 +1,11 @@
-package presenter
+package presentations
 
 import (
 	"fmt"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/go-chi/cors"
-	"github.com/mini-e-commerce-microservice/payment-service/internal/presenter/handler"
+	"github.com/mini-e-commerce-microservice/payment-service/internal/presentations/handler"
 	"net/http"
 	"time"
 )

@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 	"github.com/mini-e-commerce-microservice/payment-service/internal/conf"
-	"github.com/mini-e-commerce-microservice/payment-service/internal/presenter"
+	"github.com/mini-e-commerce-microservice/payment-service/internal/presentations"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
 	"net/http"
@@ -18,7 +18,7 @@ var restApi = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		appConf := conf.LoadAppConf()
 
-		server := presenter.New(&presenter.Presenter{
+		server := presentations.New(&presentations.Presenter{
 			Port: int(appConf.AppPort),
 		})
 

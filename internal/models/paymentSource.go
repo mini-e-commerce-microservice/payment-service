@@ -1,4 +1,4 @@
-package model
+package models
 
 type PaymentSource struct {
 	ID          int    `db:"id"`

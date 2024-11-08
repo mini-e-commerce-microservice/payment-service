@@ -2,7 +2,7 @@ package midtrans
 
 import (
 	"context"
-	payment_gateway "github.com/mini-e-commerce-microservice/payment-service/internal/repositories/payment-gateway"
+	payment_gateway "github.com/mini-e-commerce-microservice/payment-service/internal/repositories/payment_gateway"
 )
 
 type Repository interface {
